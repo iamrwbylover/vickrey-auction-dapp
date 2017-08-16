@@ -42,10 +42,14 @@ var mutatingContractOpts = [
       { name: 'nonce', type: 'text' }
     ]
   },
-  { name: 'finalize' },
+  {
+    name: 'finalize'
+  },
   {
     name: 'overrideTime',
-    inputs: [ { name: 'time', type: 'number', label: 'time (blocks)' } ]
+    inputs: [
+      { name: 'time', type: 'number', label: 'time (blocks)' }
+    ]
   }
 ];
 
@@ -135,7 +139,7 @@ $(function() {
             // paramater inputs
             .append(inputs.map(function(opts) {
               var name = opts.name;
-              var type = opts.type;
+              var type = opts.type || 'text';
               var placeholder = opts.placeholder;
               var label = opts.label || name;
               var id = methodName + '-' + name + '-input';
