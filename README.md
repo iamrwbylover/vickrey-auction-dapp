@@ -1,6 +1,11 @@
 # Vickrey Auction Dapp
 Starter repo for the Vickrey Auction project.
 
+Tools being used:
+  * [Web3](https://github.com/ethereum/wiki/wiki/JavaScript-API)
+  * [jQuery](http://api.jquery.com/)
+  * [Materialize](http://materializecss.com/getting-started.html)
+
 ## Development
 If you'd like to run the `lite-server` development server for front-end hot reloading, install dependencies and run the dev task with the following terminal commands:
   ```javascript
